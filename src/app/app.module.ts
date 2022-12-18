@@ -1,16 +1,18 @@
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { AppComponent } from './app.component';
+import { SortedNumbers } from './app.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    SortedNumbers
   ],
   imports: [
-    BrowserModule
+    ReactiveFormsModule, BrowserModule, HttpClientModule, FormsModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [SortedNumbers]
 })
 export class AppModule { }
